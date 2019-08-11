@@ -198,10 +198,21 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 
 <p>查看版本，检查是否安装成功</p>
-<hr>
-<p>###第二章</p>
-<p>内容</p>
-<hr>
+<h3 id="2-本地搭建博客"><a href="#2-本地搭建博客" class="headerlink" title="2.本地搭建博客"></a>2.本地搭建博客</h3><h4 id="2-1-使用hexo生成博客"><a href="#2-1-使用hexo生成博客" class="headerlink" title="2.1 使用hexo生成博客"></a>2.1 使用hexo生成博客</h4><p>首先创建一个文件夹,blog的所有文件都将存放在这个文件夹下，并在终端用cd命令将路径切换到这个文件夹下。接下来就可以用hexo来生成博客了，过程非常简单:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>即初始化，完成后会发现blog文件夹里多了很多文件，这就是hexo生成博客的过程。在终端输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>就可以启动博客了，打开浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可进入到博客，输入ctrl+c可以推出服务器。这个启动命令，平时可以预览用，比如写完博客，我们输入hexo s来看看实际的排版效果。</p>
+<h4 id="2-2-创建第一篇blog"><a href="#2-2-创建第一篇blog" class="headerlink" title="2.2 创建第一篇blog"></a>2.2 创建第一篇blog</h4><p>在终端输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的第一篇博客文章&quot;</span><br></pre></td></tr></table></figure>
+
+<p>就生成完成了，我们可以在根目录下的/source/_posts路径中找到这篇文章,后缀是.md。md是markdown的缩写，是一种编辑博客的语言。这是生成博客的一种方法，当然我们也可以直接在/source/_posts路径下创建博客文件，但文件后缀应为.md。使用文本编辑器打开.md文件，即可对博文进行编辑，编辑时需注意markdown的语法。写完后，在blog目录下输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>即可完成编辑。其实这样已经完成了博客在本地的搭建</p>
+<h4 id="2-3-本地博客部署到远端"><a href="#2-3-本地博客部署到远端" class="headerlink" title="2.3 本地博客部署到远端"></a>2.3 本地博客部署到远端</h4><p>这里选择将博客部署到github上，这样就可以通过github来访问博客了。首先需要有一个GitHub的账号，没有的话去注册一个吧，注册完成登陆后，在GitHub.com中可以看到一个New repository的选项，点击进入。</p>
 
       
 

@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/08/08/搭建自己的blog/your_repositories.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/08/搭建自己的blog/%E6%A0%BC%E5%BC%8F.png">
-<meta property="og:updated_time" content="2019-08-11T15:19:07.787Z">
+<meta property="og:updated_time" content="2019-08-12T10:01:41.423Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零开始搭建个人博客(hexo+github+windows)">
 <meta name="twitter:description" content="hexo是一个快速简介易上手的博客框架，使用它来搭建自己的博客是一个不错的选择。在本地搭建完成后，可以部署到github上托管网页。">
@@ -228,7 +228,11 @@
 <p>接着创建SSH:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
+<p>一路回车，完成后会生成.ssh的文件夹，在你的电脑找到这个文件夹。<br>SSH，其实就是一个密钥，文件夹中id_rsa是你这台电脑的私人秘钥，id_rsa.pub是公共秘钥，把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。<br>在GitHub的setting中，找到SH keys的设置选项，点击New SSH key并把你的id_rsa.pub里面的信息复制进去。完成后可以在gitbash中输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
+<p>查看是否设置成功。</p>
+<h5 id="2-3-3-将hexo部署到GitHub"><a href="#2-3-3-将hexo部署到GitHub" class="headerlink" title="2.3.3 将hexo部署到GitHub"></a>2.3.3 将hexo部署到GitHub</h5>
       
 
       

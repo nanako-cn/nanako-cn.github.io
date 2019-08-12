@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/08/08/搭建自己的blog/your_repositories.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/08/搭建自己的blog/%E6%A0%BC%E5%BC%8F.png">
-<meta property="og:updated_time" content="2019-08-12T10:01:41.423Z">
+<meta property="og:updated_time" content="2019-08-12T10:14:11.915Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零开始搭建个人博客(hexo+github+windows)">
 <meta name="twitter:description" content="hexo是一个快速简介易上手的博客框架，使用它来搭建自己的博客是一个不错的选择。在本地搭建完成后，可以部署到github上托管网页。">
@@ -232,7 +232,17 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
 <p>查看是否设置成功。</p>
-<h5 id="2-3-3-将hexo部署到GitHub"><a href="#2-3-3-将hexo部署到GitHub" class="headerlink" title="2.3.3 将hexo部署到GitHub"></a>2.3.3 将hexo部署到GitHub</h5>
+<h5 id="2-3-3-将hexo部署到GitHub"><a href="#2-3-3-将hexo部署到GitHub" class="headerlink" title="2.3.3 将hexo部署到GitHub"></a>2.3.3 将hexo部署到GitHub</h5><p>打开blog目录下的配置文件_config.yml，在最后修改一下deploy:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>YourgithubName就是你GitHub的名称，输入完成后保存退出。然后打开终端，cd到blog所在路径，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>这个命令是用来安装deploy-git的，也就是部署命令，安装后从能用命令部署到GitHub。安装完成后，继续输入:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>hexo clean用来清除缓存文件和已生成的静态文件(网站显示异常时，可以执行这条命令试试)，hexo g用来生成网站的静态文件，hexo d部署到设定的仓库。第一次部署时要输入自己的github的账号密码。部署成功后，就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
+
       
 
       

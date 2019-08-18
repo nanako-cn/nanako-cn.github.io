@@ -9,13 +9,14 @@
   <title>信息如何用0和1表示 | 菜菜子的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&apos;$&apos;,&apos;$&apos;], [&apos;\\(&apos;,&apos;\\)&apos;]]} });      上课笔记(01)">
+<meta name="keywords" content="计算机专业导论之思维与系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="信息如何用0和1表示">
 <meta property="og:url" content="http://yoursite.com/2019/08/17/信息如何用0和1表示/index.html">
 <meta property="og:site_name" content="菜菜子的个人博客">
 <meta property="og:description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&apos;$&apos;,&apos;$&apos;], [&apos;\\(&apos;,&apos;\\)&apos;]]} });      上课笔记(01)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-17T15:20:08.538Z">
+<meta property="og:updated_time" content="2019-08-18T03:39:31.915Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="信息如何用0和1表示">
 <meta name="twitter:description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&apos;$&apos;,&apos;$&apos;], [&apos;\\(&apos;,&apos;\\)&apos;]]} });      上课笔记(01)">
@@ -196,13 +197,52 @@ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 <p>上课笔记(01)</p>
 <a id="more"></a>
 <p>计算机存储数值性信息是以二进制的形式存储的，存储非数值性信息则是以编码的形式。</p>
-<h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><p>我们在日常生活中，都是以十进制来表达一个数字，数学也是用十进制来描述一个数字的，比如我们要表达一个数字3285.34，它的具体表达规则如下:</p>
+<h2 id="1-二进制"><a href="#1-二进制" class="headerlink" title="1.二进制"></a>1.二进制</h2><p>我们在日常生活中，都是以十进制来表达一个数字，数学也是用十进制来描述一个数字的，比如我们要表达一个数字3285.34，它的具体表达规则如下:</p>
 <blockquote>
 <p>$$3285.34 = 3×10^3 + 2×10^2 + 8×10^1 + 5×10^0 + 3×10^{-1} + 4×10^{-2}$$</p>
 </blockquote>
 <p>十进制中逢十进一，类比到二进制中，即逢二进一。下面是一个二进制的数字:</p>
 <blockquote>
 <p>$$11110101 = 1×2^7 + 1×2^6 + 1×2^5 + 1×2^4 + 1×2^2 +1×2^0$$</p>
+</blockquote>
+<h2 id="2-编码"><a href="#2-编码" class="headerlink" title="2.编码"></a>2.编码</h2><h3 id="2-1ASCII码"><a href="#2-1ASCII码" class="headerlink" title="2.1ASCII码"></a>2.1ASCII码</h3><p>ASCII码(American Standard Code for Information Interchange)即美国信息交换标准代码，它是最通用的信息交换标准。它使用7位二进制数(剩下的1位二进制为0)，如：0XXXXXXX，总共128个不同组合的字符来表示0～9，26个大写英文字母，26个小写英文字母和其他一些符号。</p>
+<h3 id="2-2汉字的编码"><a href="#2-2汉字的编码" class="headerlink" title="2.2汉字的编码"></a>2.2汉字的编码</h3><p>1个字节只能存储256个字符，这对汉字来说是远远不够的，用二进制来存储汉字，需要2个字节(2个八位)。比如”大”字，用国标码表示即为 00110100 01110111 ，两个字节的第一位都为0。但是这样规定有一个问题，它会和ASCII码混淆，放在一起时，计算机会无法区分，因此规定把两个字节前的第一位0都改成1，这种编码也称作汉字内码，如此计算机就可准确识别了。</p>
+<h2 id="3-逻辑运算"><a href="#3-逻辑运算" class="headerlink" title="3.逻辑运算"></a>3.逻辑运算</h2><p>与运算(and): X、Y都为True, 则 X and Y 为 True, 其他情况都为False。<br>或运算(or)： X、Y都为False,则 X or Y 为 False, 其他情况都为True。<br>非运算(not): 非真即假，非假即真。<br>异或运算(xor): X、Y都为True或都为False,则 X xor Y 为 False, 其他情况都为True。</p>
+<h2 id="4-原码、反码、补码"><a href="#4-原码、反码、补码" class="headerlink" title="4.原码、反码、补码"></a>4.原码、反码、补码</h2><table>
+<thead>
+<tr>
+<th align="center">十进制数字</th>
+<th align="center">+244</th>
+<th align="center">-244</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">二进制</td>
+<td align="center">+11110100</td>
+<td align="center">-11110100</td>
+</tr>
+<tr>
+<td align="center">原码</td>
+<td align="center">0 11110100</td>
+<td align="center">1 11110100</td>
+</tr>
+<tr>
+<td align="center">反码</td>
+<td align="center">0 11110100</td>
+<td align="center">1 00001011</td>
+</tr>
+<tr>
+<td align="center">补码</td>
+<td align="center">0 11110100</td>
+<td align="center">1 00001100</td>
+</tr>
+</tbody></table>
+<p>对于正数来说原码、反码、补码都是一样的，第一位0是符号位，表示正数。<br>对于负数来说，第一位1是符号位，表示负数。反码是原码除符号位外，其他位按位取反。补码是在反码的基础上最后一位+1得到的。</p>
+<p>补码运算示意：<br>(+7) + (+3) = (+10):</p>
+<h2 id="0-0111-0-0011-0-1010"><a href="#0-0111-0-0011-0-1010" class="headerlink" title="0 0111 + 0 0011 = 0 1010"></a>0 0111 + 0 0011 = 0 1010</h2><p>(+10) + (-3) = (+7)</p>
+<h2 id="0-1010-1-1101-0-0111"><a href="#0-1010-1-1101-0-0111" class="headerlink" title="0 1010 + 1 1101 = 0 0111"></a>0 1010 + 1 1101 = 0 0111</h2><p>(-5) + (-7) = (-12)</p>
+<h2 id="1-1011-1-1001-1-0100"><a href="#1-1011-1-1001-1-0100" class="headerlink" title="1 1011 + 1 1001 = 1 0100"></a>1 1011 + 1 1001 = 1 0100</h2><blockquote>
+<p>(-7) + (-12) = 溢出<br>1 1001 + 1 0100 = 0 1101 (溢出)<br>两个正数或两个负数相加时可能溢出，得到的结果符号位不同时，则表示溢出。一正一负相加不会溢出。</p>
 </blockquote>
 
       
@@ -233,6 +273,17 @@ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">计算机专业导论之思维与系统</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -434,6 +485,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">计算机专业导论之思维与系统</a>
               </li>
             
             <div class="clearfix"></div>

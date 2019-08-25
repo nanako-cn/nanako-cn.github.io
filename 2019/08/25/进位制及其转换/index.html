@@ -16,10 +16,12 @@
 <meta property="og:site_name" content="菜菜子的个人博客">
 <meta property="og:description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&apos;$&apos;,&apos;$&apos;], [&apos;\\(&apos;,&apos;\\)&apos;]]} });      在日常生活中，我们习惯用十进制来表达数据，无论是数学还是其他与数字打交道的学科，记录数据都是使用十进制。然而在计算机中，存储和表达数据是以二进制的形式。八进制和十六进制可以缩减二进制数长度，也被广泛使用。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-25T08:11:07.785Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/25/进位制及其转换/1.png">
+<meta property="og:updated_time" content="2019-08-25T13:15:19.298Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="进位制及其转换">
 <meta name="twitter:description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&apos;$&apos;,&apos;$&apos;], [&apos;\\(&apos;,&apos;\\)&apos;]]} });      在日常生活中，我们习惯用十进制来表达数据，无论是数学还是其他与数字打交道的学科，记录数据都是使用十进制。然而在计算机中，存储和表达数据是以二进制的形式。八进制和十六进制可以缩减二进制数长度，也被广泛使用。">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/25/进位制及其转换/1.png">
   
     <link rel="alternative" href="/atom.xml" title="菜菜子的个人博客" type="application/atom+xml">
   
@@ -217,6 +219,18 @@ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 <p>再如 11 101 011 . 011 11 = 353.36O</p>
 </blockquote>
 <h2 id="3-定点数"><a href="#3-定点数" class="headerlink" title="3.定点数"></a>3.定点数</h2><p>定点数，顾名思义，即小数点是固定的。对于整数来说，小数点在最后一位数字的后面；对于小数来说，小数点在符号位后面。</p>
+<h2 id="4-浮点数"><a href="#4-浮点数" class="headerlink" title="4.浮点数"></a>4.浮点数</h2><p>十进制的245.25用科学计数法可以表示为0.24525×10的3三次方。同理类比到二进制表示+ 11110101.0100有</p>
+<blockquote>
+<p>$$0\ 11110101.0100 =0\ 0.111101010100×2^{+8} = 0\ 0.111101010100×2^{0\ 1000}$$</p>
+</blockquote>
+<p>表示成浮点数为0 01000 111101010100  第一处为符号位，第二处为指数位，决定着数字的范围，第三处为尾数，决定着数字的精度。</p>
+<h3 id="4-1单精度浮点数"><a href="#4-1单精度浮点数" class="headerlink" title="4.1单精度浮点数"></a>4.1单精度浮点数</h3><p>单精度浮点数的指数为8位，尾数为23位，总共32位。</p>
+<h3 id="4-2双精度浮点数"><a href="#4-2双精度浮点数" class="headerlink" title="4.2双精度浮点数"></a>4.2双精度浮点数</h3><p>双精度浮点数的指数为11位，尾数为52位，总共64位。</p>
+<h3 id="4-3指数平移"><a href="#4-3指数平移" class="headerlink" title="4.3指数平移"></a>4.3指数平移</h3><p><img src="/2019/08/25/进位制及其转换/1.png" alt="指数平移"><br>将指数平移:-127～+127的范围，变为0～254，避免指数符号与整个数符号混淆。</p>
+<h3 id="4-4浮点数实例"><a href="#4-4浮点数实例" class="headerlink" title="4.4浮点数实例"></a>4.4浮点数实例</h3><blockquote>
+<p>$$-0.11101×2^{-1001} = -1.1101×2^{-1010}$$</p>
+</blockquote>
+<p>表示为单精度浮点数为 1 01110101 11010000000000000000000 。指数处为-10，应平移加127即117，表示为二进制为01110101。把数字表达成-1.1101×2的负10次方，是为了让精度更高。</p>
 
       
 
@@ -457,11 +471,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
+                <a href="javascript:void(0)" class="js-tag color4">计算机专业导论之思维与系统</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">计算机专业导论之思维与系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
               </li>
             
             <div class="clearfix"></div>

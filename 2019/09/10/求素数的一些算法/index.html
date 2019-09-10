@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>markdown基本语法 | 菜菜子的个人博客</title>
+  <title>求素数的一些算法 | 菜菜子的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="之前搭建博客已经提到过.md格式了，.md其实就是markdown格式，“它允许人们使用易读易写的纯文本格式编写。“（维基百科）由于markdown的轻量化，易读易写性，并且对于图片，图表、数学式都有支持，当前许多网站都广泛使用Markdown来撰写帮助文档,我们编辑博文时也会使用这个格式，因此学习一下markdown的基本语法是有必要的，这不会很困难。">
-<meta name="keywords" content="markdown">
+  <meta name="description" content="素数是指只能被1和自己整除的正整数(1除外)。我们判断一个数n是否为素数时，通常会想到用循环从i=2到i=n-1依次遍历，看是否能被n整除，如果遍历下来，所有的i都不能被n整除的话，n则是素数。当然这是一种方法，不过这种算法效率太低，如果n很大，计算机就要循环n遍。">
+<meta name="keywords" content="java,素数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown基本语法">
-<meta property="og:url" content="http://yoursite.com/2019/08/13/markdown基本语法/index.html">
+<meta property="og:title" content="求素数的一些算法">
+<meta property="og:url" content="http://yoursite.com/2019/09/10/求素数的一些算法/index.html">
 <meta property="og:site_name" content="菜菜子的个人博客">
-<meta property="og:description" content="之前搭建博客已经提到过.md格式了，.md其实就是markdown格式，“它允许人们使用易读易写的纯文本格式编写。“（维基百科）由于markdown的轻量化，易读易写性，并且对于图片，图表、数学式都有支持，当前许多网站都广泛使用Markdown来撰写帮助文档,我们编辑博文时也会使用这个格式，因此学习一下markdown的基本语法是有必要的，这不会很困难。">
+<meta property="og:description" content="素数是指只能被1和自己整除的正整数(1除外)。我们判断一个数n是否为素数时，通常会想到用循环从i=2到i=n-1依次遍历，看是否能被n整除，如果遍历下来，所有的i都不能被n整除的话，n则是素数。当然这是一种方法，不过这种算法效率太低，如果n很大，计算机就要循环n遍。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://img.mp.itc.cn/upload/20170718/918cf2e041ba46b888d910f6f27f8f5d_th.jpg">
-<meta property="og:updated_time" content="2019-08-15T12:52:21.475Z">
+<meta property="og:updated_time" content="2019-09-10T09:01:27.666Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="markdown基本语法">
-<meta name="twitter:description" content="之前搭建博客已经提到过.md格式了，.md其实就是markdown格式，“它允许人们使用易读易写的纯文本格式编写。“（维基百科）由于markdown的轻量化，易读易写性，并且对于图片，图表、数学式都有支持，当前许多网站都广泛使用Markdown来撰写帮助文档,我们编辑博文时也会使用这个格式，因此学习一下markdown的基本语法是有必要的，这不会很困难。">
-<meta name="twitter:image" content="http://img.mp.itc.cn/upload/20170718/918cf2e041ba46b888d910f6f27f8f5d_th.jpg">
+<meta name="twitter:title" content="求素数的一些算法">
+<meta name="twitter:description" content="素数是指只能被1和自己整除的正整数(1除外)。我们判断一个数n是否为素数时，通常会想到用循环从i=2到i=n-1依次遍历，看是否能被n整除，如果遍历下来，所有的i都不能被n整除的话，n则是素数。当然这是一种方法，不过这种算法效率太低，如果n很大，计算机就要循环n遍。">
   
     <link rel="alternative" href="/atom.xml" title="菜菜子的个人博客" type="application/atom+xml">
   
@@ -167,155 +165,44 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-markdown基本语法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-求素数的一些算法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      markdown基本语法
+      求素数的一些算法
     </h1>
   
 
         
-        <a href="/2019/08/13/markdown基本语法/" class="archive-article-date">
-  	<time datetime="2019-08-13T10:21:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
+        <a href="/2019/09/10/求素数的一些算法/" class="archive-article-date">
+  	<time datetime="2019-09-10T02:27:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>之前搭建博客已经提到过.md格式了，.md其实就是markdown格式，“它允许人们使用易读易写的纯文本格式编写。“（<a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">维基百科</a>）由于markdown的轻量化，易读易写性，并且对于图片，图表、数学式都有支持，当前许多网站都广泛使用Markdown来撰写帮助文档,我们编辑博文时也会使用这个格式，因此学习一下markdown的基本语法是有必要的，这不会很困难。</p>
+        <p>素数是指只能被1和自己整除的正整数(1除外)。我们判断一个数n是否为素数时，通常会想到用循环从i=2到i=n-1依次遍历，看是否能被n整除，如果遍历下来，所有的i都不能被n整除的话，n则是素数。当然这是一种方法，不过这种算法效率太低，如果n很大，计算机就要循环n遍。</p>
 <a id="more"></a>
-<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br></pre></td></tr></table></figure>
+<p>在这个基础上，我们可以改进这个算法。我们知道所有的偶数都不可能是素数(除了2)，因此只要判断奇数n是否为素数。在遍历的时候，从i=3开始，每次加2，直到n-2。如果遍历下来，所有的i都不能被n整除的话，n则是素数。这种算法，如果n很大时，可以让循环次数变为n的一半，相比上一种算法，效率提高了很多。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">package 求素数的一些方法;</span><br><span class="line"></span><br><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Prime &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">		Scanner in = new Scanner(System.in);</span><br><span class="line">		int x = in.nextInt();</span><br><span class="line">		boolean isPrime = true;</span><br><span class="line">		if (x==1 || (x%2==0 &amp;&amp; x!=2))</span><br><span class="line">		&#123;</span><br><span class="line">			isPrime = false;</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			for (int i=3; i&lt;x; i+=2)</span><br><span class="line">			&#123;</span><br><span class="line">				if (x%i == 0)</span><br><span class="line">				&#123;</span><br><span class="line">					isPrime = false;</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">				else</span><br><span class="line">				&#123;</span><br><span class="line">					isPrime = true;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		if (isPrime)</span><br><span class="line">		&#123;</span><br><span class="line">			System.out.println(x+&quot;是素数&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			System.out.println(x+&quot;不是素数&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>显示出来的效果是这样的:</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><p>最多可以到六级标题，想要几级标题，就在前面加几个#，注意#后面有空格。</p>
-<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><ul>
-<li><font color="#6495ED">  加粗:</font> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br></pre></td></tr></table></figure>
+<p>从数学的角度上，判断一个自然数n是否为素数，只需要遍历到根号n即可，证明略。这样我们的循环次数就从n减少到二分之n再减少到根号n次了。当然还有更好的更快的方案。<br>我们还可以拿比这个数字n小的所有素数来判断n是否为素数，如果n不能被小于它的素数整除，那我们就可以说n是一个素数。下面是求前50个素数的代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">package 求素数的一些方法;</span><br><span class="line"></span><br><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Prime &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">		Scanner in = new Scanner(System.in);</span><br><span class="line">		int[] primes =new int[50];</span><br><span class="line">		primes[0]=2;</span><br><span class="line">		int cnt =1;</span><br><span class="line">		out:</span><br><span class="line">		for (int x=3; cnt&lt;50; x++)</span><br><span class="line">		&#123;</span><br><span class="line">			for (int i= 0 ;i&lt;cnt;i++)</span><br><span class="line">			&#123;</span><br><span class="line">				if (x%primes[i]==0)</span><br><span class="line">					continue out;</span><br><span class="line">			&#125;</span><br><span class="line">			primes[cnt++] =x ;</span><br><span class="line">		&#125;</span><br><span class="line">		for (int k:primes)</span><br><span class="line">		&#123;</span><br><span class="line">			System.out.println(k+&quot; &quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(cnt);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<p>显示效果如下:<br><strong>加粗</strong></p>
-<ul>
-<li><font color="#6495ED">  斜体:</font> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*斜体*</span><br></pre></td></tr></table></figure>
+<p>注意第21行的代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">primes[cnt++] =x ;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<p>显示效果如下：<br><em>斜体</em></p>
-<ul>
-<li><font color="#6495ED">  斜体加粗:</font> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">***斜体加粗***</span><br></pre></td></tr></table></figure>
+<p>它其实是先将x放入数组中，再进行cnt+=1的，等价于：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">primes[cnt] =x ;</span><br><span class="line">cnt+=1;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<p>显示效果如下:<br><strong><em>斜体加粗</em></strong></p>
-<ul>
-<li><font color="#6495ED">  删除线:</font> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+<p>以上都是找素数的传统方法，即从原始定义出发来判断是否是素数。我们也可以有另外一种思维方式，换个角度想，所有的素数的倍数一定都不是素数，如果我们把已知的素数的倍数都挑走，那么剩下的就是素数，算法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">package 求素数的一些方法;</span><br><span class="line"></span><br><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Prime &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">		Scanner in = new Scanner(System.in);</span><br><span class="line">				boolean[] primes = new boolean[100];</span><br><span class="line">		for (int i = 0; i &lt; primes.length; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			primes[i] = true;</span><br><span class="line">		&#125;</span><br><span class="line">		for (int i=2; i&lt;primes.length; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			if (primes[i])</span><br><span class="line">			&#123;</span><br><span class="line">				for (int k=2 ; i*k&lt;primes.length ; k++)</span><br><span class="line">				&#123;</span><br><span class="line">					primes[i*k]=false;</span><br><span class="line">				&#125;		</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		for (int i=2; i&lt;primes.length; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			if (primes[i])</span><br><span class="line">			&#123;</span><br><span class="line">				System.out.print(i+&quot; &quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<p>显示效果如下：<br><del>删除线</del></p>
-<h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3.列表"></a>3.列表</h2><h3 id="3-1-有序列表"><a href="#3-1-有序列表" class="headerlink" title="3.1 有序列表"></a>3.1 有序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 列表1</span><br><span class="line">3. 列表2</span><br><span class="line">5. 列表3</span><br></pre></td></tr></table></figure>
-
-<p>显示出来是这样的:</p>
-<ol>
-<li>列表1</li>
-<li>列表2</li>
-<li>列表3<br>我们不难发现，有序列表的序号是根据第一行的数字顺序来的。<h3 id="3-2-无序列表"><a href="#3-2-无序列表" class="headerlink" title="3.2 无序列表"></a>3.2 无序列表</h3>无序列表可以用*,+或者-来表示:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>注意空格，显示结果为:</p>
-<ul>
-<li>列表内容</li>
-</ul>
-<ul>
-<li>列表内容</li>
-</ul>
-<ul>
-<li>列表内容</li>
-</ul>
-<h2 id="4-引用"><a href="#4-引用" class="headerlink" title="4.引用"></a>4.引用</h2><p>写法类似标题:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; 一级引用</span><br><span class="line">&gt;&gt; 二级引用</span><br><span class="line">&gt;&gt;&gt; 三级引用</span><br><span class="line">&gt;&gt;&gt;&gt; 四级引用</span><br></pre></td></tr></table></figure>
-
-<p>效果如下:</p>
-<blockquote>
-<p>一级引用</p>
-<blockquote>
-<p>二级引用</p>
-<blockquote>
-<p>三级引用</p>
-<blockquote>
-<p>四级引用</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>很好理解，在上一层引用中嵌套一层引用，只需多加一个&gt;，理论上可以无限嵌套。</p>
-<h2 id="5-分割线"><a href="#5-分割线" class="headerlink" title="5.分割线"></a>5.分割线</h2><p>三个或三个以上的-,*,_ ，中间有空格也可以:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">_ _ _</span><br><span class="line">******</span><br><span class="line">--------</span><br></pre></td></tr></table></figure>
-
-<p>效果如下:</p>
-<hr>
-<hr>
-<hr>
-<h2 id="6-表格"><a href="#6-表格" class="headerlink" title="6.表格"></a>6.表格</h2><p>语法如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|表头|表头|表头|</span><br><span class="line">|----|----|----|</span><br><span class="line">|内容|内容|内容|</span><br><span class="line">|内容|内容|内容|</span><br></pre></td></tr></table></figure>
-
-<p>第二行是用来分割表头和内容的，-有一个就行了，文字默认居左。<br>:-----: 文字居中<br>----- 文字左对齐<br>-----: 文字右对齐<br>示例:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|大学代码|大学名称|大学类型|</span><br><span class="line">|:-:|:-:|:-:|</span><br><span class="line">|10284|南京大学|985|</span><br><span class="line">|10285|苏州大学|211|</span><br><span class="line">|10286|东南大学|985|</span><br></pre></td></tr></table></figure>
-
-<p>显示效果如下:</p>
-<table>
-<thead>
-<tr>
-<th align="center">大学代码</th>
-<th align="center">大学名称</th>
-<th align="center">大学类型</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">10284</td>
-<td align="center">南京大学</td>
-<td align="center">985</td>
-</tr>
-<tr>
-<td align="center">10285</td>
-<td align="center">苏州大学</td>
-<td align="center">211</td>
-</tr>
-<tr>
-<td align="center">10286</td>
-<td align="center">东南大学</td>
-<td align="center">985</td>
-</tr>
-</tbody></table>
-<h2 id="7-代码框"><a href="#7-代码框" class="headerlink" title="7.代码框"></a>7.代码框</h2><p>写法如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(```)</span><br><span class="line">public class HelloWorld&#123;</span><br><span class="line"></span><br><span class="line">public static void main(String[] args)&#123;</span><br><span class="line"></span><br><span class="line">System.out.println(&quot;Hello,World!&quot;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
-
-<p>显示效果如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line"></span><br><span class="line">public static void main(String[] args)&#123;</span><br><span class="line"></span><br><span class="line">System.out.println(&quot;Hello,World!&quot;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>前后三个反引号处了加了小括号是为了防止转义，实际输入时请删除括号。</p>
-</blockquote>
-<h2 id="8-超链接"><a href="#8-超链接" class="headerlink" title="8.超链接"></a>8.超链接</h2><h3 id="8-1-行内式"><a href="#8-1-行内式" class="headerlink" title="8.1 行内式"></a>8.1 行内式</h3><p>链接的文字放在[]中，链接地址放在随后的()中:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[小破站](https://www.bilibili.com/)</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.bilibili.com/" target="_blank" rel="noopener">小破站</a></p>
-<h3 id="8-2-参数式"><a href="#8-2-参数式" class="headerlink" title="8.2 参数式"></a>8.2 参数式</h3><p>即把链接当成参数:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[小破站]: https://www.bilibili.com/</span><br><span class="line">这里是[小破站]</span><br></pre></td></tr></table></figure>
-
-<p>这里是<a href="https://www.bilibili.com/" target="_blank" rel="noopener">小破站</a></p>
-<h2 id="9-插入图片"><a href="#9-插入图片" class="headerlink" title="9.插入图片"></a>9.插入图片</h2><p>写法如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![东南大学](http://img.mp.itc.cn/upload/20170718/918cf2e041ba46b888d910f6f27f8f5d_th.jpg)</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://img.mp.itc.cn/upload/20170718/918cf2e041ba46b888d910f6f27f8f5d_th.jpg" alt="东南大学"><br>也可以插入本地图片。</p>
-<hr>
-<p>常用的基本就是这些，掌握这些，撰写博文绰绰有余，当然如果遇到不会的，多多谷歌就是了。</p>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://www.cnblogs.com/liugang-vip/p/6337580.html" target="_blank" rel="noopener">https://www.cnblogs.com/liugang-vip/p/6337580.html</a><br><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a><br><a href="https://sspai.com/post/25137" target="_blank" rel="noopener">https://sspai.com/post/25137</a></p>
+<p>这个代码的功能是寻找100以内的素数。在创建布尔型数组时，默认元素的值都为false，我们要遍历赋值为true。</p>
 
       
 
@@ -350,7 +237,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">素数</a>
         		</li>
       		
 		</ul>
@@ -406,7 +297,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/13/markdown基本语法/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/10/求素数的一些算法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -420,18 +311,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/17/信息如何用0和1表示/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          信息如何用0和1表示
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/08/搭建自己的blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">从零开始搭建个人博客(hexo+github+windows)</div>
+    <a href="/2019/09/09/java数组/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java数组的一些注意点</div>
       <i class="icon-circle-right"></i>
     </a>
   
